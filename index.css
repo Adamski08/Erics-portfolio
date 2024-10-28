@@ -298,7 +298,7 @@ a {
     }
     .b-about__image-div {
         width: 100%;
-        height: 200px;
+        height: auto;
     }
     .b-about__img {
         width: 30%;
@@ -382,6 +382,8 @@ a {
     .b-header {
         height: 200px;
         min-width: 150px;
+        width: 100vw;
+        box-sizing:border-box;
     }
     .b-header-img {
         height: 80%;
@@ -389,6 +391,10 @@ a {
     }
     .b-header__item, .b-header__item-items {
         height: 100%;
+
+    }
+    .b-header__item {
+        width: auto;
     }
     .b-about {
         width: 80%;
@@ -396,7 +402,7 @@ a {
         min-width: 150px;
     }
     .b-about__image-div {
-        width: 25%;
+        width: auto;
         height: 100%;
     }
     .b-about__text-div {
@@ -411,6 +417,8 @@ a {
         display: flex;
         width: 100%;
         justify-content: space-around;
+        flex-wrap: wrap;
+        row-gap: 8px;
     }
     .b-experience {
         width: 100%;
@@ -430,6 +438,8 @@ a {
     .b-projects__items {
         width: 100%;
         flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 8px;
         justify-content: space-around;
     }
     
@@ -439,6 +449,7 @@ a {
     }
     .b-contact {
         width: 100vw;
+        box-sizing: border-box;
         height: auto;
         min-width: 150px;
     }
